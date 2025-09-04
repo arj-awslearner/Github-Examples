@@ -30,3 +30,9 @@ jobs:
         run: |
           echo "Contents of the file:"
           cat ./decoded_file.txt
+  second-chance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Second Greeting
+        run: |
+          echo "${{ inputs.greeting }}, ${{ inputs.name }} again!!!!!"
